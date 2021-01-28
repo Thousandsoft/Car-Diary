@@ -14,6 +14,7 @@
 		841DDF4125C1666400EBE937 /* Car_Diary.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 841DDF3F25C1666400EBE937 /* Car_Diary.xcdatamodeld */; };
 		841DDF4325C1666D00EBE937 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 841DDF4225C1666D00EBE937 /* Assets.xcassets */; };
 		841DDF4625C1666D00EBE937 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 841DDF4425C1666D00EBE937 /* LaunchScreen.storyboard */; };
+		84BCE98D25C2BADD005DF469 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BCE98C25C2BADD005DF469 /* Car.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		841DDF4225C1666D00EBE937 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		841DDF4525C1666D00EBE937 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		841DDF4725C1666D00EBE937 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84BCE98C25C2BADD005DF469 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,11 +61,12 @@
 			isa = PBXGroup;
 			children = (
 				841DDF3625C1666400EBE937 /* AppDelegate.swift */,
+				84BCE98C25C2BADD005DF469 /* Car.swift */,
 				841DDF3825C1666400EBE937 /* SceneDelegate.swift */,
 				841DDF3A25C1666400EBE937 /* ViewController.swift */,
 				841DDF3C25C1666400EBE937 /* Main.storyboard */,
-				841DDF4225C1666D00EBE937 /* Assets.xcassets */,
 				841DDF4425C1666D00EBE937 /* LaunchScreen.storyboard */,
+				841DDF4225C1666D00EBE937 /* Assets.xcassets */,
 				841DDF4725C1666D00EBE937 /* Info.plist */,
 				841DDF3F25C1666400EBE937 /* Car_Diary.xcdatamodeld */,
 			);
@@ -142,6 +145,7 @@
 			files = (
 				841DDF4125C1666400EBE937 /* Car_Diary.xcdatamodeld in Sources */,
 				841DDF3B25C1666400EBE937 /* ViewController.swift in Sources */,
+				84BCE98D25C2BADD005DF469 /* Car.swift in Sources */,
 				841DDF3725C1666400EBE937 /* AppDelegate.swift in Sources */,
 				841DDF3925C1666400EBE937 /* SceneDelegate.swift in Sources */,
 			);
