@@ -14,47 +14,66 @@ class Car {
     private var manufacturer: String
     private var model: String
     private var carColor: UIColor
-    private var _issueYear: Int
-    private var _mileage: Int
+    private var issueYear: Int = 0
+    private var mileage: Int = 0
     private var fuelType: String
-    private var tankVolume: Int
-    private var ownerCount: Int
-    private var accidentCount: Int
+    private var tankVolume: Int = 0
+    private var ownerCount: Int = 0
+    private var accidentCount: Int = 0
     private var carImage: UIImage
     private var description: String?
     
-    /*init(){
-        self.name = ""
-        self.manufacturer = ""
-        self.model = ""
-        self.carColor = UIColor.white
-        self.issueYear = 0
-        self.mileage = 0
-        self.fuelType = ""
-        self.tankVolume = 0
-        self.ownerCount = 0
-        self.accidentCount = 0
-        self.carImage = ""
-    }*/
-    public var issueYear: Int{
-        get {
-            return _issueYear
-        }
-        set{
-            if (newValue > 1800 && newValue < 3000){
-                _issueYear = newValue
-            }
+    
+    func getIssueYear() -> Int{
+        return issueYear
+    }
+    
+    func setIssueYear(year: Int){
+        if (year > 1800 && year < 3000){
+            issueYear = year
         }
     }
     
-    public var mileage: Int{
-        get {
-            return _mileage
+    
+    func getMileage() -> Int{
+        return mileage
+    }
+    
+    func setMileage(mileage: Int){
+        if (mileage >= 0){
+            self.mileage = mileage
         }
-        set{
-            if (newValue > 0){
-                _mileage = newValue
-            }
+    }
+    
+    
+    func getTankVolume() -> Int{
+        return tankVolume
+    }
+    
+    func setTankVolume(volume: Int){
+        if (volume > 0){
+            tankVolume = volume
+        }
+    }
+    
+    func getOwnerCount() -> Int{
+        return ownerCount
+    }
+    
+    func setOwnerCount(count: Int){
+        if (count > 0){
+            ownerCount = count
+        }
+    }
+    
+    
+    func getAccidentCount() -> Int{
+        return accidentCount
+    }
+    
+    func setAccidentCount(count: Int){
+        if (count > 0){
+            accidentCount = count
         }
     }
     
@@ -64,9 +83,14 @@ class Car {
         self.manufacturer = manufacturer
         self.model = model
         self.carColor = carColor
-        self.issueYear = issueYear
-        self.mileage = mileage
-        
+        self.fuelType = fuelType
+        self.carImage = carImage
+        self.description = description
+        setIssueYear(year: issueYear)
+        setMileage(mileage: mileage)
+        setTankVolume(volume: tankVolume)
+        setOwnerCount(count: ownerCount)
+        setAccidentCount(count: accidentCount)
     }
     
     
